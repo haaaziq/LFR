@@ -4,6 +4,7 @@ int RightOpDir = 9;
 int LeftDir = 10;
 int LeftOpDir = 11;
 
+//5-IR array sensor
 int LeftSen = 2;
 int LeftMSen = 3;
 int MidSen = 4;
@@ -35,7 +36,7 @@ void setup()
   pinMode(RightSen,INPUT);
 }
 
-
+//Different cases based on sensor reading
 void loop()
 {
   if((digitalRead(LeftSen)==0) && (digitalRead(LeftMSen)==0) && (digitalRead(MidSen)==0) && (digitalRead(RightMSen)==0) && (digitalRead(RightSen)==0))
